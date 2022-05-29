@@ -1,0 +1,72 @@
+.login-page {
+  display: flex;
+}
+
+.login {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    padding: 10rem;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 2px;
+
+  }
+
+  &__title {
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: .5rem;
+    color: var(--color-primary-dark);
+  }
+
+  &__input, &__input:focus {
+    padding: .5rem;
+    width: 40rem;
+    margin-top: 2rem;
+    border: none;
+    border-bottom: solid var(--color-primary-dark) 1px;
+    outline: none;
+  }
+
+  &__input:focus {
+    background-color: rgb(231, 231, 231);
+  }
+
+
+  &__button {
+    margin-top: 4rem;
+    padding: 1rem;
+    width: 40rem;
+    text-transform: uppercase;
+    background-color: var(--color-primary-dark);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    border-radius: 2px;
+  }
+
+  &__button:disabled {
+    background-color: rgba(214, 214, 214, 0.514);
+    cursor: auto;
+  }
+}
+
+.login-wallet-box {
+  background-image: url(./images/bitcoin.png);
+
+  background-position: -14rem 0;
+  width: 50%;
+  height: 100vh;
+
+ 
+}
