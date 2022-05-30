@@ -89,4 +89,10 @@ html {
   height: 100vh;
 }
 
+.header {
+  background-color: var(--color-grey-dark-1);
+  color: white;
+  font-size: 2rem;
+}
+
 /*# sourceMappingURL=index.css.map */

@@ -17,7 +17,7 @@ export class Header extends Component {
   render() {
     const { userLogin } = this.props;
     return (
-      <div>
+      <div className='header'>
         <p data-testid="email-field">{ userLogin }</p>
         <p data-testid="total-field">
           { this.totalExpenses() }
