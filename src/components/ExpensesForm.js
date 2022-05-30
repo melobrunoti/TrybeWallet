@@ -53,10 +53,11 @@ export class Expenses extends Component {
     const { value, description, method, tag, currency } = this.state;
     const { currencies } = this.props;
     return (
-      <form>
-        <label htmlFor="value">
+      <form className='form' >
+        <label className='form__label'  htmlFor="value">
           Valor
           <input
+            className='form__input'
             data-testid="value-input"
             type="number"
             id="value"
@@ -65,9 +66,10 @@ export class Expenses extends Component {
             onChange={ this.handleChange }
           />
         </label>
-        <label htmlFor="description">
+        <label className='form__label' htmlFor="description">
           Descricao
           <input
+            className='form__input'
             data-testid="description-input"
             type="text"
             id="description"
@@ -76,9 +78,10 @@ export class Expenses extends Component {
             onChange={ this.handleChange }
           />
         </label>
-        <label htmlFor="currency">
+        <label className='form__label' htmlFor="currency">
           Moedas
           <select
+            className='form__select'
             data-testid="currency-input"
             name="currency"
             id="currency"
@@ -92,9 +95,10 @@ export class Expenses extends Component {
             getCurrencies
           </select>
         </label>
-        <label htmlFor="payment-method">
-          Metodo de pagamento
+        <label className='form__label' htmlFor="payment-method">
+          Método de pagamento
           <select
+            className='form__select'
             data-testid="method-input"
             id="payment-method"
             name="method"
@@ -109,9 +113,10 @@ export class Expenses extends Component {
 
           </select>
         </label>
-        <label htmlFor="tag">
-          categoria
+        <label className='form__label' htmlFor="tag">
+          Categoria
           <select
+            className='form__select'
             data-testid="tag-input"
             name="tag"
             id="tag"
@@ -127,6 +132,7 @@ export class Expenses extends Component {
           </select>
         </label>
         <button
+          className='form__button'
           type="button"
           onClick={ this.handleSubmit }
         >
