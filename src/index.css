@@ -84,7 +84,7 @@ html {
 
 .login-wallet-box {
   background-image: url(./images/bitcoin.png);
-  background-position: -14rem 0;
+  background-position: -14rem 3rem;
   width: 50%;
   height: 100vh;
 }
@@ -95,6 +95,17 @@ html {
   font-size: 1.5rem;
   font-weight: 600;
   font-family: sans-serif;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  align-items: center;
+}
+.header__total {
+  display: flex;
+}
+
+.coin {
+  margin-left: 1rem;
 }
 
 .form {
@@ -147,6 +158,7 @@ html {
   text-align: center;
   background-color: var(--color-primary-dark);
   overflow: scroll;
+  box-shadow: var(--shadow-light);
 }
 .table__button {
   font-family: sans-serif;

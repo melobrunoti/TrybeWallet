@@ -4,4 +4,16 @@
   font-size: 1.5rem;
   font-weight: 600;
   font-family: sans-serif;  
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem ;
+  align-items: center;
+
+  &__total {
+    display: flex;
+  }
+}
+
+.coin {
+  margin-left: 1rem;
 }

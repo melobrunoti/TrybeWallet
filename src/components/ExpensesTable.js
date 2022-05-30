@@ -61,7 +61,7 @@ export class ExpensesTable extends Component {
 }
 
 ExpensesTable.propTypes = {
-  expenses: PropTypes.objectOf.isRequired,
+  expenses: PropTypes.array.isRequired,
   deleteExpense: PropTypes.func.isRequired,
 };
 

@@ -18,18 +18,22 @@ export class Header extends Component {
     const { userLogin } = this.props;
     return (
       <div className='header'>
-        <p data-testid="email-field">{ userLogin }</p>
-        <p data-testid="total-field">
-          { this.totalExpenses() }
-        </p>
-        <p data-testid="header-currency-field">BRL</p>
+        <div className='header__total'>
+          <p data-testid="total-field">
+            { this.totalExpenses() }
+          </p>
+          <p className='coin' data-testid="header-currency-field">BRL</p>
+        </div>
+        <div className='header__email' >
+          <p data-testid="email-field">{ userLogin }</p>
+        </div>
       </div>
     );
   }
 }
 
 Header.propTypes = {
-  total: PropTypes.string.isRequired,
+  total: PropTypes.array.isRequired,
   userLogin: PropTypes.string.isRequired,
 };
 

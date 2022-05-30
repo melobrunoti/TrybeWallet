@@ -5,6 +5,7 @@
   text-align: center;
   background-color: var(--color-primary-dark);
   overflow: scroll;
+  box-shadow: var(--shadow-light);
 
   &__button {
     font-family: sans-serif;

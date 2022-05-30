@@ -146,7 +146,7 @@ export class Expenses extends Component {
 Expenses.propTypes = {
   fetch: PropTypes.func.isRequired,
   add: PropTypes.func.isRequired,
-  currencies: PropTypes.string.isRequired,
+  currencies: PropTypes.any.isRequired,
   expenses: PropTypes.arrayOf(Object).isRequired,
 };
 
