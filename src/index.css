@@ -140,4 +140,43 @@ html {
   display: flex;
 }
 
+.table {
+  width: 100rem;
+  font-size: 1.5rem;
+  margin: auto;
+  text-align: center;
+  background-color: var(--color-primary-dark);
+  overflow: scroll;
+}
+.table__button {
+  font-family: sans-serif;
+  font-weight: 700;
+  padding: 0.7rem;
+  font-size: 1rem;
+  font-size: 1.2rem;
+  color: red;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+}
+
+.table-section {
+  max-width: 200rem;
+  margin-top: 3rem;
+  width: 100%;
+  overflow: scroll;
+  max-height: 97vh;
+}
+
+th {
+  align-items: center;
+  background-color: var(--color-primary-dark);
+  padding: 1rem;
+}
+
+td {
+  background-color: white;
+  padding: 1rem;
+}
+
 /*# sourceMappingURL=index.css.map */

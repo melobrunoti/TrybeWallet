@@ -7,8 +7,8 @@ export class ExpensesTable extends Component {
   render() {
     const { expenses, deleteExpense } = this.props;
     return (
-      <div>
-        <table>
+      <div className='table-section' >
+        <table className='table'>
           <thead>
             <tr>
               <th>Descrição</th>
@@ -19,6 +19,7 @@ export class ExpensesTable extends Component {
               <th>Moeda de conversão</th>
               <th>Câmbio utilizado</th>
               <th>Valor convertido</th>
+              <th>Moeda Base</th>
               <th>Editar/Excluir</th>
             </tr>
           </thead>
@@ -43,6 +44,7 @@ export class ExpensesTable extends Component {
               </td>
               <td>
                 <button
+                  className='table__button'
                   data-testid="delete-btn"
                   type="button"
                   onClick={ () => deleteExpense(expense) }

@@ -67,7 +67,7 @@ export class Expenses extends Component {
           />
         </label>
         <label className='form__label' htmlFor="description">
-          Descricao
+          Descrição
           <input
             className='form__input'
             data-testid="description-input"
